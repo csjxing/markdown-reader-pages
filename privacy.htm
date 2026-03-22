@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 墨读 Markdown Reader</title>
+    <meta name="description" content="墨读 - Markdown Reader 隐私政策">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1A88E5;
+            --text: #333;
+            --text-light: #666;
+            --bg: #FFFFFF;
+            --bg-alt: #F5F9FC;
+            --border: #E8E6E3;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        /* Nav */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        /* Content */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5rem 1.5rem 3rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .header h1 span {
+            color: var(--primary);
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .header .date {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            opacity: 0.8;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 2.5rem;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+        }
+
+        .section-title-en {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+        }
+
+        .section-title + p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+
+        .section p {
+            color: var(--text-light);
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .section ul {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .section li {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .section li::before {
+            content: "❌";
+            position: absolute;
+            left: 0;
+            font-size: 0.8rem;
+        }
+
+        .section strong {
+            color: var(--text);
+        }
+
+        .highlight {
+            background: var(--bg-alt);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .contact-box {
+            background: var(--bg-alt);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-box p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            margin: 3rem 0;
+            position: relative;
+        }
+
+        .divider::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .divider span {
+            background: var(--bg);
+            padding: 0 1.5rem;
+            position: relative;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        footer p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.5rem; }
+            .section-title { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo">墨读 - Markdown Reader</a>
+        <a href="index.html">← 返回首页</a>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h1><span>隐私政策</span> / Privacy Policy</h1>
+            <p class="subtitle">Markdown Reader</p>
+            <p class="date">最后更新日期 / Last Updated: 2026年3月</p>
+        </div>
+
+        <!-- 中文版 -->
+        <div class="section">
+            <h2 class="section-title">概述</h2>
+            <p>Overview</p>
+            <p>Markdown Reader（以下简称"本应用"）尊重并保护用户隐私。本隐私政策说明我们如何收集、使用和保护您的信息。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">信息收集</h2>
+            <p>Information Collection</p>
+            <p>本应用 <strong class="highlight">不收集任何个人数据</strong>。具体而言：</p>
+            <ul>
+                <li>不收集姓名、邮箱等个人信息</li>
+                <li>不收集设备标识符</li>
+                <li>不收集使用统计数据</li>
+                <li>不使用 Cookie 或追踪技术</li>
+                <li>不需要用户注册或登录</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">本地存储</h2>
+            <p>Local Storage</p>
+            <p>本应用仅在您的设备本地存储以下数据：</p>
+            <ul style="list-style: disc; padding-left: 1.5rem;">
+                <li>阅读进度</li>
+                <li>应用设置（主题、字体大小等）</li>
+                <li>书架信息</li>
+            </ul>
+            <p style="margin-top: 1rem;">这些数据完全存储在您的设备上，不会上传到任何服务器。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">文件访问</h2>
+            <p>File Access</p>
+            <p>本应用需要访问您选择打开的 Markdown 文件（.md、.markdown、.txt），仅用于阅读和编辑。我们不会上传或分享这些文件。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第三方服务</h2>
+            <p>Third-Party Services</p>
+            <p>本应用不集成任何第三方分析、广告或社交服务。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">儿童隐私</h2>
+            <p>Children's Privacy</p>
+            <p>本应用适合所有年龄段用户使用，不收集任何年龄段的个人信息。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">政策变更</h2>
+            <p>Policy Changes</p>
+            <p>如本政策有变更，我们将在此页面更新。</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">联系我们</h2>
+            <p>Contact Us</p>
+            <div class="contact-box">
+                <p>如有隐私相关问题，请联系：</p>
+                <p><strong>邮箱</strong>：<a href="mailto:langbenlanglou@gmail.com">langbenlanglou@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="divider">
+            <span>English Version</span>
+        </div>
+
+        <!-- English Version -->
+        <div class="section">
+            <h2 class="section-title-en">Overview</h2>
+            <p>Markdown Reader (hereinafter "the App") respects and protects user privacy. This privacy policy explains how we handle your information.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title-en">Information Collection</h2>
+            <p>The App <strong class="highlight">does not collect any personal data</strong>. Specifically:</p>
+            <ul>
+                <li>No personal information such as name or email</li>
+                <li>No device identifiers</li>
+                <li>No usage statistics</li>
+                <li>No cookies or tracking technologies</li>
+                <li>No user registration or login required</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title-en">Local Storage</h2>
+            <p>The App only stores the following data locally on your device:</p>
+            <ul style="list-style: disc; padding-left: 1.5rem;">
+                <li>Reading progress</li>
+                <li>App settings (theme, font size, etc.)</li>
+                <li>Bookshelf information</li>
+            </ul>
+            <p style="margin-top: 1rem;">This data is stored entirely on your device and is not uploaded to any server.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title-en">File Access</h2>
+            <p>The App needs access to Markdown files (.md, .markdown, .txt) that you choose to open, solely for reading and editing purposes. We do not upload or share these files.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title-en">Third-Party Services</h2>
+            <p>The App does not integrate any third-party analytics, advertising, or social services.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title-en">Children's Privacy</h2>
+            <p>The App is suitable for users of all ages and does not collect personal information from any age group.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title-en">Policy Changes</h2>
+            <p>If this policy changes, we will update this page.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title-en">Contact Us</h2>
+            <div class="contact-box">
+                <p>For privacy-related questions, please contact:</p>
+                <p><strong>Email</strong>: <a href="mailto:langbenlanglou@gmail.com">langbenlanglou@gmail.com</a></p>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 <a href="index.html">weisee team</a></p>
+        </footer>
+    </div>
+</body>
+</html>
