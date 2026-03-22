@@ -1,0 +1,5 @@
+{
+  "cleanUrls": true,      // 自动去掉 .html
+  "trailingSlash": false, // 结尾不加 /
+  "rewrites": [...]       // 重写规则
+}
