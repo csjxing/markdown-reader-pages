@@ -170,43 +170,43 @@
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 1.5rem;
         }
 
         .feature-card {
             text-align: center;
-            padding: 1.5rem;
+            padding: 1.5rem 1rem;
         }
 
         .feature-icon {
-            width: 56px;
-            height: 56px;
+            width: 48px;
+            height: 48px;
             background: var(--bg-alt);
-            border-radius: 14px;
-            margin: 0 auto 1rem;
+            border-radius: 12px;
+            margin: 0 auto 0.75rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
 
         .feature-card h3 {
-            font-size: 1rem;
+            font-size: 0.95rem;
             font-weight: 600;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
             color: var(--text);
         }
 
-        .feature-card h3 + p {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            margin-bottom: 0.5rem;
-        }
-
-        .feature-card p:last-child {
+        .feature-card .desc-zh {
             font-size: 0.85rem;
             color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+
+        .feature-card .desc-en {
+            font-size: 0.75rem;
+            color: var(--text-muted);
         }
 
         /* Highlights */
@@ -340,12 +340,21 @@
             .hero h1 { font-size: 1.75rem; }
             .screenshot-placeholder { aspect-ratio: 4/3; }
             .download-buttons { flex-direction: column; align-items: center; }
+            .features-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 0.5rem;
+            }
+            .feature-card { padding: 0.75rem 0.25rem; }
+            .feature-icon { width: 36px; height: 36px; font-size: 0.9rem; border-radius: 10px; margin-bottom: 0.5rem; }
+            .feature-card h3 { font-size: 0.8rem; margin-bottom: 0.25rem; }
+            .feature-card .desc-zh { font-size: 0.7rem; }
+            .feature-card .desc-en { font-size: 0.6rem; }
         }
     </style>
 </head>
 <body>
     <header>
-        <a href="../../index.html" class="back-link">
+        <a href="../weisee-pages/" class="back-link">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
             微见
         </a>
@@ -430,26 +439,26 @@
             <div class="feature-card">
                 <div class="feature-icon">📖</div>
                 <h3>沉浸阅读</h3>
-                <p>Immersive</p>
-                <p>极简界面，隐藏干扰，专注内容本身</p>
+                <p class="desc-zh">极简界面，专注内容</p>
+                <p class="desc-en">Minimal interface, focus on content</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🎨</div>
                 <h3>护眼主题</h3>
-                <p>Eye-friendly</p>
-                <p>亮色、深色、护眼棕三种主题可选</p>
+                <p class="desc-zh">亮色、深色、护眼棕</p>
+                <p class="desc-en">Light, Dark, Sepia themes</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🔒</div>
                 <h3>隐私优先</h3>
-                <p>Privacy First</p>
-                <p>本地存储，无云端，数据属于你</p>
+                <p class="desc-zh">本地存储，数据属于你</p>
+                <p class="desc-en">Local storage, your data stays yours</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">💾</div>
                 <h3>自动保存</h3>
-                <p>Auto Save</p>
-                <p>阅读进度自动记录，随时继续</p>
+                <p class="desc-zh">阅读进度自动记录</p>
+                <p class="desc-en">Auto-save reading progress</p>
             </div>
         </div>
     </section>
@@ -502,7 +511,7 @@
     </section>
 
     <footer>
-        <p>© 2026 <a href="../../index.html">微见工作室 weisee team</a> · <a href="privacy.html">隐私政策</a></p>
+        <p>© 2026 <a href="../weisee-pages/">微见工作室 weisee team</a> · <a href="privacy.html">隐私政策</a></p>
     </footer>
 </body>
 </html>
