@@ -1,7 +1,4 @@
 {
-  "build": {
-    "outputDirectory": "_site"
-  },
   "rewrites": [
     { "source": "/(.*).html", "destination": "/$1" }
   ]
